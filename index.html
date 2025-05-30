@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>i3digital - Marketing Digital Inteligente | Agência de Marketing em São Paulo</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="i3digital - Agência de marketing digital especializada em Meta Ads, Google Ads, Google Meu Negócio e criação de sites. Aumente sua visibilidade online com preços justos e resultados garantidos." />
+  <meta name="keywords" content="marketing digital, agência de marketing, Meta Ads, Google Ads, Google Meu Negócio, criação de sites, SEO, marketing online, publicidade digital" />
+  <meta name="author" content="i3digital" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://i3digital.com.br/" />
+  <meta property="og:title" content="i3digital - Marketing Digital Inteligente" />
+  <meta property="og:description" content="Conecte sua empresa com seus clientes através de estratégias inteligentes de marketing digital. Resultados reais e preços acessíveis." />
+  <meta property="og:image" content="/images/og-image.jpg" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://i3digital.com.br/" />
+  <meta property="twitter:title" content="i3digital - Marketing Digital Inteligente" />
+  <meta property="twitter:description" content="Conecte sua empresa com seus clientes através de estratégias inteligentes de marketing digital." />
+  <meta property="twitter:image" content="/images/twitter-image.jpg" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://i3digital.com.br/" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/images/Favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/images/Transformacao-digital.webp" as="image" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Structured Data - Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "i3digital",
+    "url": "https://i3digital.com.br",
+    "logo": "https://i3digital.com.br/logo.png",
+    "description": "Agência de marketing digital especializada em Meta Ads, Google Ads, Google Meu Negócio e criação de sites",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-99-99999-9999",
+      "contactType": "customer service",
+      "availableLanguage": "Portuguese"
+    },
+    "sameAs": [
+      "https://wa.me/5599999999999"
+    ]
+  }
+  </script>
+  
+  <!-- Structured Data - Services -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Marketing Digital",
+    "provider": {
+      "@type": "Organization",
+      "name": "i3digital"
+    },
+    "serviceType": "Digital Marketing",
+    "description": "Serviços completos de marketing digital incluindo Meta Ads, Google Ads, Google Meu Negócio e criação de sites"
+  }
+  </script>
+  
+  <style>
+   .logo-text {
+      font-size: 2.5rem;
+      font-weight: 700;
+      font-family: Arial, sans-serif;
+      color: #4285f4;
+    }
+    .logo-bar {
+      height: 8px;
+      display: flex;
+    }
+    .logo-bar > div {
+      flex: 1;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+      z-index: 50;
+      animation: pulse 2s infinite;
+    }
+    
+    @media (min-width: 768px) {
+      .whatsapp-float {
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+      }
+    }
+    
+    .whatsapp-float:hover {
+      background-color: #128C7E;
+      transform: scale(1.1);
+    }
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+      }
+      50% {
+        box-shadow: 0 8px 35px rgba(37, 211, 102, 0.6);
+      }
+      100% {
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+      }
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #f8f9ff 0%, #e8f0fe 100%);
+    }
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    /* Melhorias de responsividade */
+    @media (max-width: 640px) {
+      .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+      }
+      .hero-subtitle {
+        font-size: 1.1rem;
+      }
+      .card-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .method-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+    
+    @media (min-width: 641px) and (max-width: 768px) {
+      .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .method-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm border-b" role="banner">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/" class="cursor-pointer" aria-label="i3digital - Página inicial">
+        <div class="logo-text">i3digital</div>
+        <div class="logo-bar" role="presentation" aria-hidden="true">
+          <div style="background-color: #ea4335;"></div>
+          <div style="background-color: #fbbc05;"></div>
+          <div style="background-color: #34a853;"></div>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative py-16 md:py-20" role="main">
+    <!-- Imagem de fundo -->
+    <img src="/images/Transformacao-digital.webp" 
+         alt="Transformação digital para empresas" 
+         class="absolute inset-0 w-full h-full object-cover z-0"
+         loading="eager" />
+    
+    <div class="absolute inset-0 bg-black opacity-50 z-0" aria-hidden="true"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-4 text-center text-white">
+      <h1 class="hero-title text-4xl md:text-5xl font-bold mb-6">
+        Mais visibilidade para o seu negócio
+      </h1>
+      <p class="hero-subtitle text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+        A i3digital conecta sua empresa com seus clientes através de estratégias inteligentes de marketing digital e posicionamento online por um preço justo e acessível.
+      </p>
+      <div class="cta-buttons flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/5599999999999" 
+           class="border-2 bg-green-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg hover:border-gray-800 border-green-500 transition font-semibold"
+           aria-label="Entre em contato via WhatsApp">
+          🚀 Entre em Contato
+        </a>
+        <a href="https://wa.me/5599999999999" 
+           class="border-2 bg-blue-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg hover:border-gray-800 border-blue-500 transition font-semibold"
+           aria-label="Agendar reunião via WhatsApp">
+          💼 Agende uma Reunião
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossos Serviços -->
+  <section class="py-16 md:py-20 bg-white" id="servicos">
+    <div class="max-w-6xl mx-auto px-4">
+      <header class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Nossos Serviços</h2>
+        <p class="text-center text-gray-600 text-base md:text-lg">Soluções completas para fazer seu negócio crescer online</p>
+      </header>
+      
+      <div class="card-grid grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        
+        <!-- Meta Ads -->
+        <article class="p-6 md:p-8 shadow-lg rounded-2xl hover-lift flex flex-col justify-between" 
+                 style="background-color: #4285f4; color: white;">
+          <div>
+            <div class="text-3xl md:text-4xl mb-4" role="img" aria-label="Ícone Meta Ads">🎯</div>
+            <h3 class="text-lg md:text-xl font-bold mb-3">Meta Ads</h3>
+            <p class="mb-6 text-sm md:text-base">Campanhas de reconhecimento para aumentar sua presença online.</p>
+          </div>
+          <a href="https://wa.me/5599999999999" 
+             class="bg-white text-blue-500 px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition text-center"
+             aria-label="Saiba mais sobre Meta Ads">
+            Saiba mais
+          </a>
+        </article>
+
+        <!-- Google Ads -->
+        <article class="p-6 md:p-8 shadow-lg rounded-2xl hover-lift flex flex-col justify-between" 
+                 style="background-color: #ea4335; color: white;">
+          <div>
+            <div class="text-3xl md:text-4xl mb-4" role="img" aria-label="Ícone Google Ads">📱</div>
+            <h3 class="text-lg md:text-xl font-bold mb-3">Google Ads</h3>
+            <p class="mb-6 text-sm md:text-base">Anúncios segmentados para atrair clientes prontos para comprar.</p>
+          </div>
+          <a href="https://wa.me/5599999999999" 
+             class="bg-white text-red-500 px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition text-center"
+             aria-label="Saiba mais sobre Google Ads">
+            Saiba mais
+          </a>
+        </article>
+
+        <!-- Google Meu Negócio -->
+        <article class="p-6 md:p-8 shadow-lg rounded-2xl hover-lift flex flex-col justify-between" 
+                 style="background-color: #fbbc05; color: white;">
+          <div>
+            <div class="text-3xl md:text-4xl mb-4" role="img" aria-label="Ícone Google Meu Negócio">📍</div>
+            <h3 class="text-lg md:text-xl font-bold mb-3">Google Meu Negócio</h3>
+            <p class="mb-6 text-sm md:text-base">Otimização completa para que sua empresa apareça no topo do Google.</p>
+          </div>
+          <a href="https://wa.me/5599999999999" 
+             class="bg-white text-yellow-600 px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition text-center"
+             aria-label="Saiba mais sobre Google Meu Negócio">
+            Saiba mais
+          </a>
+        </article>
+
+        <!-- Site Comercial -->
+        <article class="p-6 md:p-8 shadow-lg rounded-2xl hover-lift flex flex-col justify-between" 
+                 style="background-color: #34a853; color: white;">
+          <div>
+            <div class="text-3xl md:text-4xl mb-4" role="img" aria-label="Ícone Site Comercial">🌐</div>
+            <h3 class="text-lg md:text-xl font-bold mb-3">Site Comercial</h3>
+            <p class="mb-6 text-sm md:text-base">Landing page profissional inclusa.</p>
+          </div>
+          <a href="https://wa.me/5599999999999" 
+             class="bg-white text-green-600 px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition text-center"
+             aria-label="Saiba mais sobre Site Comercial">
+            Saiba mais
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Intermediário -->
+  <section class="py-12 md:py-16 gradient-bg relative bg-cover bg-center bg-no-repeat" 
+           style="background-image: url('images/comece\ agora.webp');">
+    <div class="absolute inset-0 bg-black bg-opacity-40" aria-hidden="true"></div>
+    <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4 text-white">
+        Pronto para transformar seu negócio?
+      </h2>
+      <p class="text-base md:text-lg text-white mb-6 md:mb-8">
+        Milhares de empresas já confiam na i3digital para crescer online
+      </p>
+      <a href="https://wa.me/5599999999999" 
+         class="border-2 bg-blue-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg hover:border-gray-800 border-blue-500 transition font-semibold"
+         aria-label="Falar com especialista via WhatsApp">
+        💼 Fale com um Especialista
+      </a>
+    </div>
+  </section>
+
+  <!-- Método 3A3R -->
+  <section class="py-16 md:py-20 bg-white" id="metodo">
+    <div class="max-w-6xl mx-auto px-4">
+      <header class="text-center mb-12 md:mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #4285f4;">Método 3A3R</h2>
+        <p class="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
+          Estruturamos toda a jornada do cliente em 6 etapas estratégicas: Atração, Atenção, Ação, Retenção, Recomendação e Recompra. Isso garante resultados reais, consistentes e escaláveis.
+        </p>
+      </header>
+      
+      <div class="method-grid grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        
+        <article class="text-white p-6 md:p-8 rounded-2xl shadow-lg hover-lift" 
+                 style="background-color: #ea4335;">
+          <div class="text-3xl md:text-4xl mb-4" role="img" aria-label="Ícone Atração">🧲</div>
+          <h3 class="font-bold text-lg md:text-xl mb-3">Atração</h3>
+          <p class="text-sm md:text-base">Gerar interesse inicial através de anúncios e conteúdos estratégicos.</p>
+        </article>
+        
+        <article class="p-6 md:p-8 rounded-2xl shadow-lg hover-lift bg-gray-100">
+          <div class="text-3xl md:text-4xl mb-4" role="img" aria-label="Ícone Atenção">👁️</div>
+          <h3 class="font-bold text-lg md:text-xl mb-3">Atenção</h3>
+          <p class="text-sm md:text-base">Criar conexões, despertando o desejo e mantendo o foco na sua marca.</p>
+        </article>
+        
+        <article class="text-white p-6 md:p-8 rounded-2xl shadow-lg hover-lift" 
+                 style="background-color: #34a853;">
+          <div class="text-3xl md:text-4xl mb-4" role="img" aria-label="Ícone Ação">⚡</div>
+          <h3 class="font-bold text-lg md:text-xl mb-3">Ação</h3>
+          <p class="text-sm md:text-base">Incentivar o cliente a realizar a compra ou contato.</p>
+        </article>
+        
+        <article class="p-6 md:p-8 rounded-2xl shadow-lg hover-lift bg-gray-100">
+          <div class="text-3xl md:text-4xl mb-4" role="img" aria-label="Ícone Retenção">🤝</div>
+          <h3 class="font-bold text-lg md:text-xl mb-3">Retenção</h3>
+          <p class="text-sm md:text-base">Manter o cliente engajado com conteúdos e benefícios.</p>
+        </article>
+        
+        <article class="text-white p-6 md:p-8 rounded-2xl shadow-lg hover-lift" 
+                 style="background-color: #fbbc05;">
+          <div class="text-3xl md:text-4xl mb-4" role="img" aria-label="Ícone Recomendação">💬</div>
+          <h3 class="font-bold text-lg md:text-xl mb-3">Recomendação</h3>
+          <p class="text-sm md:text-base">Estimular indicações espontâneas através de boas experiências.</p>
+        </article>
+        
+        <article class="p-6 md:p-8 rounded-2xl shadow-lg hover-lift bg-gray-100">
+          <div class="text-3xl md:text-4xl mb-4" role="img" aria-label="Ícone Recompra">🔄</div>
+          <h3 class="font-bold text-lg md:text-xl mb-3">Recompra</h3>
+          <p class="text-sm md:text-base">Garantir que o cliente volte a comprar, fortalecendo a relação.</p>
+        </article>
+        
+      </div>
+      
+      <div class="text-center mt-8 md:mt-12">
+        <a href="https://wa.me/5599999999999" 
+           class="border-2 bg-blue-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg hover:border-gray-800 border-blue-500 transition font-semibold"
+           aria-label="Implementar método 3A3R">
+          🎯 Quero implementar o 3A3R
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="py-16 md:py-20" style="background-color: #f8f9ff;" id="depoimentos">
+    <div class="max-w-6xl mx-auto px-4">
+      <header class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">O que nossos clientes dizem</h2>
+        <p class="text-center text-gray-600 text-base md:text-lg">Histórias reais de sucesso com a i3digital</p>
+      </header>
+      
+      <div class="card-grid grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+
+        <!-- Depoimento 1 -->
+        <article class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover-lift text-center flex flex-col justify-between">
+          <div>
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" 
+                 alt="Foto da cliente da Clínica Sorriso" 
+                 class="w-16 h-16 md:w-20 md:h-20 rounded-full mx-auto mb-4 md:mb-6 border-4 border-red-500"
+                 loading="lazy" />
+            <blockquote class="text-gray-700 mb-4 italic text-sm md:text-base">
+              "Consegui dobrar meus atendimentos em menos de 3 meses!"
+            </blockquote>
+          </div>
+          <cite class="font-bold text-gray-800 mt-4 not-italic">— Clínica Sorriso</cite>
+        </article>
+
+        <!-- Depoimento 2 -->
+        <article class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover-lift text-center flex flex-col justify-between">
+          <div>
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" 
+                 alt="Foto do cliente do Studio Fit" 
+                 class="w-16 h-16 md:w-20 md:h-20 rounded-full mx-auto mb-4 md:mb-6 border-4 border-yellow-500"
+                 loading="lazy" />
+            <blockquote class="text-gray-700 mb-4 italic text-sm md:text-base">
+              "O suporte da i3 é incrível. Sempre atentos e com soluções rápidas."
+            </blockquote>
+          </div>
+          <cite class="font-bold text-gray-800 mt-4 not-italic">— Studio Fit</cite>
+        </article>
+
+        <!-- Depoimento 3 -->
+        <article class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover-lift text-center flex flex-col justify-between">
+          <div>
+            <img src="https://randomuser.me/api/portraits/men/46.jpg" 
+                 alt="Foto do Dr. João Silva" 
+                 class="w-16 h-16 md:w-20 md:h-20 rounded-full mx-auto mb-4 md:mb-6 border-4 border-green-500"
+                 loading="lazy" />
+            <blockquote class="text-gray-700 mb-4 italic text-sm md:text-base">
+              "Antes eu nem aparecia no Google. Agora sou destaque na minha cidade."
+            </blockquote>
+          </div>
+          <cite class="font-bold text-gray-800 mt-4 not-italic">— Dr. João Silva</cite>
+        </article>
+
+        <!-- Depoimento 4 -->
+        <article class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover-lift text-center flex flex-col justify-between">
+          <div>
+            <img src="https://randomuser.me/api/portraits/women/47.jpg" 
+                 alt="Foto da cliente da Loja Estilo" 
+                 class="w-16 h-16 md:w-20 md:h-20 rounded-full mx-auto mb-4 md:mb-6 border-4 border-blue-500"
+                 loading="lazy" />
+            <blockquote class="text-gray-700 mb-4 italic text-sm md:text-base">
+              "Excelente investimento para quem quer crescer na internet."
+            </blockquote>
+          </div>
+          <cite class="font-bold text-gray-800 mt-4 not-italic">— Loja Estilo</cite>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="py-16 md:py-20 bg-gray-800 text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6">Não perca mais tempo nem clientes</h2>
+      <p class="text-lg md:text-xl mb-6 md:mb-8 opacity-90">
+        Seus concorrentes já estão crescendo online. É hora de você também crescer!
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/5599999999999" 
+           class="border-2 bg-blue-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg hover:border-gray-800 border-blue-500 transition font-semibold"
+           aria-label="Crescer agora via WhatsApp">
+          🚀 Quero Crescer Agora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12" role="contentinfo">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        
+        <!-- Logo e Descrição -->
+        <div>
+          <a href="/" class="cursor-pointer" aria-label="i3digital - Página inicial">
+            <div class="logo-text text-white">i3digital</div>
+            <div class="logo-bar" role="presentation" aria-hidden="true">
+              <div style="background-color: #ea4335;"></div>
+              <div style="background-color: #fbbc05;"></div>
+              <div style="background-color: #34a853;"></div>
+            </div>
+          </a>
+          <p class="mt-4 text-gray-400 leading-relaxed">
+            Marketing inteligente para fazer seu negócio crescer online.
+          </p>
+        </div>
+        
+        <!-- Contato -->
+        <div>
+          <h3 class="font-bold text-lg mb-4 text-white">Contato</h3>
+          <a href="https://wa.me/5599999999999" 
+             class="text-gray-400 hover:text-green-400 transition-colors duration-300 block"
+             aria-label="Contato via WhatsApp">
+            WhatsApp: (99) 99999-9999
+          </a>
+        </div>
+        
+        <!-- Horário -->
+        <div>
+          <h3 class="font-bold text-lg mb-4 text-white">Horário de Funcionamento</h3>
+          <p class="text-gray-400">Segunda a Sexta: 08h às 18h</p>
+        </div>
+        
+      </div>
+      
+      <!-- Copyright -->
+      <div class="border-t border-gray-700 pt-8 text-center">
+        <p class="text-gray-400">© 2025 i3digital. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante WhatsApp -->
+  <a href="https://wa.me/5599999999999" 
+     class="whatsapp-float" 
+     aria-label="Fale Conosco pelo WhatsApp"
+     role="button">
+    <svg xmlns="http://www.w3.org/2000/svg" 
+         fill="white" 
+         viewBox="0 0 24 24" 
+         width="28" 
+         height="28"
+         aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+    </svg>
+  </a>
+
+</body>
+</html>
